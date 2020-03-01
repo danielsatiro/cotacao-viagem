@@ -1,0 +1,19 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return redirect(route('l5-swagger.api'));
+});
+
+Route::get('quote/{from}/{to}', ['as' => 'route.quote', 'uses' => 'TravelRouteController@quote']);
+Route::post('route', ['as' => 'route.store', 'uses' => 'TravelRouteController@store']);
