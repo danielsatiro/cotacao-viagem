@@ -19,9 +19,10 @@ vendor/bin/phpunit
 Relatório de cobertura será gerado na pasta "report"
 
 Endereço da aplicação:
-
+```
 GET http://localhost/api/quote/{from}/{to}
 POST http://localhost/api/route
+```
 
 Endereço da documentação:
 
